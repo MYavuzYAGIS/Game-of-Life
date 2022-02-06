@@ -22,7 +22,7 @@ pub struct Universe {
     height: u32,
     cells: Vec<Cell>,
 }
-
+#[wasm_bindgen]
 impl Universe {
     pub fn tick(&mut self) {
         let mut next = self.cells.clone();
@@ -111,7 +111,6 @@ impl fmt::Display for Universe {
             }
             write!(f, "\n")?;
         }
-
         Ok(())
     }
 }
