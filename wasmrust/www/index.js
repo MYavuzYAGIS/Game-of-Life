@@ -1,3 +1,13 @@
-import * as wasm from "wasmrust";
+import { Universe } from "wasmrust";
 
-wasm.greet();
+const pre = document.getElementById("wasmrust-canvas");
+const universe = Universe.new();
+
+const renderLoop = () => {
+    pre.textContent = universe.render();
+    universe.tick();
+  
+    requestAnimationFrame(renderLoop);
+  };
+
+requestAnimationFrame(renderLoop);

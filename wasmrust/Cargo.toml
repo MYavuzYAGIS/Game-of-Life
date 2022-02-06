@@ -2,7 +2,11 @@
 name = "wasmrust"
 version = "0.1.0"
 authors = ["Yavuz <m.yavuzyagis@gmail.com>"]
-edition = "2018"
+edition = "2021"
+repository = "https://github.com/MYavuzYAGIS/wasmrust"
+description = "A self-guided learning project that includes Rust + Wasm together. Who knows, maybe Typescript and React joins too"
+license="MIT"
+
 
 [lib]
 crate-type = ["cdylib", "rlib"]
