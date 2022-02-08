@@ -51,6 +51,6 @@ wasm-pack publish
 
 
 
-  ## Ta Da!!
+## 🚴 Ta Da!!
 
   ![img](game.gif)
